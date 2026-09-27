@@ -1,0 +1,14 @@
+{
+  "name": "codewiki-cli",
+  "version": "0.1.0",
+  "description": "Agent-friendly CLI for Google CodeWiki",
+  "type": "module",
+  "bin": {
+    "codewiki": "./bin/run.js"
+  },
+  "oclif": {
+    "bin": "codewiki",
+    "commands": "./dist/commands",
+    "dirname": "codewiki"
+  }
+}

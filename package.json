@@ -1,0 +1,45 @@
+{
+  "name": "codewiki-cli",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Agent-friendly CLI for Google CodeWiki",
+  "bin": {
+    "codewiki": "./bin/run.js"
+  },
+  "files": [
+    "bin",
+    "dist"
+  ],
+  "type": "module",
+  "scripts": {
+    "build": "tsup",
+    "build:skill": "tsup --config tsup.skill.config.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "tsup && node --test test/*.test.mjs",
+    "format": "oxfmt .",
+    "format:check": "oxfmt --check .",
+    "lint": "oxlint src test bin --deny-warnings",
+    "lint:fix": "oxlint src test bin --fix"
+  },
+  "dependencies": {
+    "@oclif/core": "^4.14.0",
+    "marked": "^18.0.14",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "oxfmt": "^0.70.0",
+    "oxlint": "^1.85.0",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.0"
+  },
+  "oclif": {
+    "bin": "codewiki",
+    "commands": "./dist/commands",
+    "dirname": "codewiki"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@12.6.0"
+}
