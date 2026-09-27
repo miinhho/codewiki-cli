@@ -54,6 +54,6 @@ pnpm typecheck
 pnpm test
 ```
 
-CodeWiki's RPC is undocumented and may change. The RPC request format was informed by [izzzzzi/codewiki-mcp](https://github.com/izzzzzi/codewiki-mcp).
+CodeWiki's RPC is undocumented and may change.  
 
 For agent use, see the [CodeWiki CLI skill](.agents/skills/codewiki-cli/SKILL.md).
