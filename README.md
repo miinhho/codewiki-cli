@@ -37,7 +37,13 @@ The default directory is `$XDG_CACHE_HOME/codewiki-cli`, or `~/.cache/codewiki-c
 
 ## Agent skill
 
-The [CodeWiki CLI skill](.agents/skills/codewiki-cli/SKILL.md) includes a built CLI. Copy the skill directory to another agent workspace to use it without this source checkout or an npm package. Run `pnpm build:skill` after changing the CLI to update the bundled copy.
+The [CodeWiki CLI skill](.agents/skills/codewiki-cli/SKILL.md) includes a built CLI. Install it in another project with GitHub access to this repository:
+
+```sh
+npx skills add miinhho/codewiki-cli --skill codewiki-cli -a codex --copy -y
+```
+
+Add `-g` for a user-wide installation. Run `pnpm build:skill` after changing the CLI to update the bundled copy.
 
 ## Development
 
