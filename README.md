@@ -1,6 +1,6 @@
 # codewiki-cli
 
-A CLI for reading Google CodeWiki repository docs as JSON. List sections first, then request only the section content you need.
+A CLI for reading Google CodeWiki repository docs. List sections first, then request only the section content you need.
 
 ## Quick start
 
